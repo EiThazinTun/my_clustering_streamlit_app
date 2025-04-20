@@ -22,8 +22,8 @@ st.set_page_config(page_title="k-Means Clustering App", layout="centered")
 st.title(" k-Means Clustering Visualizer")
 
 #Display cluster centers
-#st.subheader(" Example Data for Visualization")
-#st.markdown("This demo uses example data(2D) to illustrate clustering results.")
+st.subheader(" Example Data for Visualization")
+st.markdown("This demo uses example data(2D) to illustrate clustering results.")
 
 #Load from a saved dataset ot generate synthetic data
 
