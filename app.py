@@ -34,3 +34,14 @@ y_kmeans=loaded_model.predict(X)
 # Predict using the loaded model
 y_kmeans = loaded_model.predict(X)
 
+# Plotting
+fig, ax = plt.subplots()
+ax.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='viridis')
+
+# Plot cluster centers
+centers = loaded_model.cluster_centers_
+ax.scatter(centers[:, 0], centers[:, 1], c='red', s=200, alpha=0.75, marker='X', label='Centroids')
+ax.legend()
+
+# Display the plot in Streamlit
+st.pyplot(fig)
